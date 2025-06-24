@@ -1,99 +1,83 @@
 import { Navbar, NavDropdown, Nav as BootstrapNav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import './nav.css'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faHeartPulse } from '@fortawesome/free-solid-svg-icons'
-function Nav() {
-    const base = '/PortfolioVlad';
-    const element = <FontAwesomeIcon icon={faHeartPulse} style={{ color: '#FF5F1F' }} />;
-    return (
-        <Navbar bg="light" expand="lg">
-            <LinkContainer to={`${base}/Home`}>
-                <Navbar.Brand className={"margin"}>{element} Vlad's Portfolio</Navbar.Brand>
-            </LinkContainer>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <BootstrapNav className="mr-auto">
+import './nav.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeartPulse } from '@fortawesome/free-solid-svg-icons';
 
-                    <LinkContainer className={"margin"} to={`${base}/Home`}>
-                        <BootstrapNav.Link>Home</BootstrapNav.Link>
+function Nav() {
+    const base = '/Portfolio-Vlad';
+    const element = (<FontAwesomeIcon icon={faHeartPulse} className="pulse-icon" />);
+
+    return (
+        <Navbar bg="dark" variant="dark" expand="lg">
+            <LinkContainer to={`${base}/Home`}>
+                <Navbar.Brand className="margin me-4">{element} Vlad's Portfolio</Navbar.Brand>
+            </LinkContainer>
+
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+            <Navbar.Collapse id="basic-navbar-nav">
+                {/* Spread items evenly using Bootstrap flex + full width */}
+                <BootstrapNav className="w-100 justify-content-evenly align-items-center">
+
+                    <LinkContainer to={`${base}/Home`}>
+                        <BootstrapNav.Link className="margin">Home</BootstrapNav.Link>
                     </LinkContainer>
 
-
-
-
-
-
-                    <NavDropdown className={"margin"} title="Security Info" id="basic-nav-dropdown">
+                    <NavDropdown className="margin" title="Security Info" id="security-dropdown">
                         <LinkContainer to={`${base}/Security`}>
-                            <NavDropdown.Item>Security Overview</NavDropdown.Item>
+                            <NavDropdown.Item className="margin">Security Overview</NavDropdown.Item>
                         </LinkContainer>
                         <LinkContainer to={`${base}/Registration`}>
-                            <NavDropdown.Item>Registration</NavDropdown.Item>
+                            <NavDropdown.Item className="margin">Registration</NavDropdown.Item>
                         </LinkContainer>
                         <LinkContainer to={`${base}/Authentication`}>
-                            <NavDropdown.Item>Authentication</NavDropdown.Item>
+                            <NavDropdown.Item className="margin">Authentication</NavDropdown.Item>
                         </LinkContainer>
                         <LinkContainer to={`${base}/Login`}>
-                            <NavDropdown.Item>Login</NavDropdown.Item>
+                            <NavDropdown.Item className="margin">Login</NavDropdown.Item>
                         </LinkContainer>
                         <LinkContainer to={`${base}/Logout`}>
-                            <NavDropdown.Item>Logout</NavDropdown.Item>
+                            <NavDropdown.Item className="margin">Logout</NavDropdown.Item>
                         </LinkContainer>
                     </NavDropdown>
 
-
-
-
-
-                    <NavDropdown className={"margin"} title="Puzzle Info" id="basic-nav-dropdown">
+                    <NavDropdown className="margin" title="Puzzle Info" id="puzzle-dropdown">
                         <LinkContainer to={`${base}/Puzzle`}>
-                            <NavDropdown.Item>Puzzle Overview</NavDropdown.Item>
+                            <NavDropdown.Item className="margin">Puzzle Overview</NavDropdown.Item>
                         </LinkContainer>
                         <LinkContainer to={`${base}/Create-Puzzle`}>
-                            <NavDropdown.Item>Create a Puzzle</NavDropdown.Item>
+                            <NavDropdown.Item className="margin">Create a Puzzle</NavDropdown.Item>
                         </LinkContainer>
                         <LinkContainer to={`${base}/Edit-Puzzle`}>
-                            <NavDropdown.Item>Edit Puzzle</NavDropdown.Item>
+                            <NavDropdown.Item className="margin">Edit Puzzle</NavDropdown.Item>
                         </LinkContainer>
                         <LinkContainer to={`${base}/Share-Puzzle`}>
-                            <NavDropdown.Item>Share Puzzle</NavDropdown.Item>
+                            <NavDropdown.Item className="margin">Share Puzzle</NavDropdown.Item>
                         </LinkContainer>
                         <LinkContainer to={`${base}/Archive-Puzzle`}>
-                            <NavDropdown.Item>Archive Puzzle</NavDropdown.Item>
+                            <NavDropdown.Item className="margin">Archive Puzzle</NavDropdown.Item>
                         </LinkContainer>
                     </NavDropdown>
 
-
-
-
-
-                    <LinkContainer className={"margin"} to={`${base}/My-Puzzlez`}>
-                        <BootstrapNav.Link>My Puzzlez</BootstrapNav.Link>
+                    <LinkContainer to={`${base}/My-Puzzlez`}>
+                        <BootstrapNav.Link className="margin">My Puzzlez</BootstrapNav.Link>
                     </LinkContainer>
 
-
-
-
-                    <LinkContainer className={"margin"} to={`${base}/My-Completed-Puzzlez`}>
-                        <BootstrapNav.Link>My Completed Puzzlez</BootstrapNav.Link>
+                    <LinkContainer to={`${base}/My-Completed-Puzzlez`}>
+                        <BootstrapNav.Link className="margin">My Completed Puzzlez</BootstrapNav.Link>
                     </LinkContainer>
 
-
-
-
-
-                    <LinkContainer className={"margin"} to={`${base}/Approve-Puzzlez`}>
-                        <BootstrapNav.Link>Approve Completion</BootstrapNav.Link>
+                    <LinkContainer to={`${base}/Approve-Puzzlez`}>
+                        <BootstrapNav.Link className="margin">Approve Completion</BootstrapNav.Link>
                     </LinkContainer>
-
 
 
 
                 </BootstrapNav>
             </Navbar.Collapse>
         </Navbar>
-    )
+    );
 }
 
 export default Nav;

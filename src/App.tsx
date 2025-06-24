@@ -9,13 +9,20 @@ import WorkContributions from "./pages/WorkContributions.tsx";
 import Organizations from "./pages/Organizations.tsx";
 import Contributions from "./pages/Contributions.tsx";
 import AboutMe from "./pages/AboutMe.tsx";
+import Nav from './components/nav';
 
 function App() {
-    const base = '/PortfolioVlad';
+    const base = '/Portfolio-Vlad';
     return (
         <Router>
-            {/*<Nav />*/}
+            <Nav></Nav>
             <Routes>
+                {/* Redirect from root `/` */}
+                <Route path="/" element={<Navigate to={`${base}/Home`} replace />} />
+
+                {/* ✅ Redirect from `/Portfolio-Vlad/` to `/Portfolio-Vlad/Home` */}
+                <Route path={`${base}/`} element={<Navigate to={`${base}/Home`} replace />} />
+
                 <Route path="/PortfolioVlad/" element={<Navigate to={`${base}/Home`} />} />
                 <Route path={`${base}/Home`} element={<Home/>} />
                 <Route path={`${base}/Education`} element={<Education/>} />

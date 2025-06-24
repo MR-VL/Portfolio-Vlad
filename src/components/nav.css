@@ -1,0 +1,58 @@
+/* Make nav items white with smooth hover */
+.margin {
+    color: white !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover styles for nav links and dropdown items */
+.navbar-dark .nav-link.margin:hover,
+.navbar-dark .dropdown-item.margin:hover {
+    background-color: #65c7ff !important;
+    color: black !important;
+    border-radius: 10px;
+}
+
+/* Hover style for brand */
+.navbar-dark .navbar-brand.margin:hover {
+    color: black !important;
+    background-color: #65c7ff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dropdown menu background */
+.navbar-dark .dropdown-menu {
+    background-color: rgba(101, 199, 255, 0.61);
+}
+
+/* Hover effect for dropdown toggle buttons (e.g., "Security Info", "Puzzle Info") */
+.navbar-dark .nav-link.dropdown-toggle:hover {
+    background-color: #65c7ff !important;
+    color: black !important;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+/* Spread nav links evenly */
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Margin before and after brand */
+.navbar-brand.margin {
+    margin-left: 5rem;
+    margin-right: 1.5rem;
+}
+
+/* Force dropdown toggle buttons (e.g., "Security Info") to match other links */
+.navbar-dark .nav-link.dropdown-toggle {
+    color: white !important;
+    background-color: transparent !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
