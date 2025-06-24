@@ -3,10 +3,14 @@ import { LinkContainer } from 'react-router-bootstrap';
 import './nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeartPulse } from '@fortawesome/free-solid-svg-icons';
+import { useLocation } from 'react-router-dom';
 
 function Nav() {
     const base = '/Portfolio-Vlad';
     const element = (<FontAwesomeIcon icon={faHeartPulse} className="pulse-icon" />);
+    const location = useLocation();
+    const isActive = (path) => location.pathname === `${base}${path}`;
+    const isAnyActive = (paths) => paths.some(path => location.pathname === `${base}${path}`);
 
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
@@ -17,15 +21,23 @@ function Nav() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
             <Navbar.Collapse id="basic-navbar-nav">
-                {/* Spread items evenly using Bootstrap flex + full width */}
                 <BootstrapNav className="w-100 justify-content-evenly align-items-center">
 
                     <LinkContainer to={`${base}/Home`}>
-                        <BootstrapNav.Link className="margin">Home</BootstrapNav.Link>
+                        <BootstrapNav.Link className={`margin ${isActive('/Home') ? 'active-link' : ''}`}>
+                            Home
+                        </BootstrapNav.Link>
                     </LinkContainer>
 
-                    <NavDropdown className="margin" title="Security Info" id="security-dropdown">
-                        <LinkContainer to={`${base}/Security`}>
+                    <NavDropdown
+                        className={`margin ${isAnyActive([
+                            '/Security', '/Registration', '/Authentication', '/Login', '/Logout'
+                        ]) ? 'active-link' : ''}`}
+                        title="Security Info"
+                        id="security-dropdown"
+                    >
+
+                    <LinkContainer to={`${base}/Security`}>
                             <NavDropdown.Item className="margin">Security Overview</NavDropdown.Item>
                         </LinkContainer>
                         <LinkContainer to={`${base}/Registration`}>
@@ -42,8 +54,15 @@ function Nav() {
                         </LinkContainer>
                     </NavDropdown>
 
-                    <NavDropdown className="margin" title="Puzzle Info" id="puzzle-dropdown">
-                        <LinkContainer to={`${base}/Puzzle`}>
+                    <NavDropdown
+                        className={`margin ${isAnyActive([
+                            '/Puzzle', '/Create-Puzzle', '/Edit-Puzzle', '/Share-Puzzle', '/Archive-Puzzle'
+                        ]) ? 'active-link' : ''}`}
+                        title="Puzzle Info"
+                        id="puzzle-dropdown"
+                    >
+
+                    <LinkContainer to={`${base}/Puzzle`}>
                             <NavDropdown.Item className="margin">Puzzle Overview</NavDropdown.Item>
                         </LinkContainer>
                         <LinkContainer to={`${base}/Create-Puzzle`}>
@@ -61,18 +80,22 @@ function Nav() {
                     </NavDropdown>
 
                     <LinkContainer to={`${base}/My-Puzzlez`}>
-                        <BootstrapNav.Link className="margin">My Puzzlez</BootstrapNav.Link>
+                        <BootstrapNav.Link className={`margin ${isActive('/My-Puzzlez') ? 'active-link' : ''}`}>
+                            My Puzzlez
+                        </BootstrapNav.Link>
                     </LinkContainer>
 
                     <LinkContainer to={`${base}/My-Completed-Puzzlez`}>
-                        <BootstrapNav.Link className="margin">My Completed Puzzlez</BootstrapNav.Link>
+                        <BootstrapNav.Link className={`margin ${isActive('/My-Completed-Puzzlez') ? 'active-link' : ''}`}>
+                            My Completed Puzzlez
+                        </BootstrapNav.Link>
                     </LinkContainer>
 
                     <LinkContainer to={`${base}/Approve-Puzzlez`}>
-                        <BootstrapNav.Link className="margin">Approve Completion</BootstrapNav.Link>
+                        <BootstrapNav.Link className={`margin ${isActive('/Approve-Puzzlez') ? 'active-link' : ''}`}>
+                            Approve Completion
+                        </BootstrapNav.Link>
                     </LinkContainer>
-
-
 
                 </BootstrapNav>
             </Navbar.Collapse>
