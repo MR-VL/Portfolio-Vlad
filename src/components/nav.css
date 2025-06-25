@@ -1,0 +1,51 @@
+/* Make nav items white with smooth hover */
+.margin {
+    color: white !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover styles for nav links, dropdown items, and brand */
+.navbar-dark .nav-link.margin:hover,
+.navbar-dark .dropdown-item.margin:hover,
+.navbar-dark .nav-link.dropdown-toggle:hover,
+.navbar-dark .navbar-brand.margin:hover {
+    background-color: #4fb3d4 !important;
+    color: black !important;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dropdown menu background */
+.navbar-dark .dropdown-menu {
+    background-color: rgba(101, 199, 255, 0.61);
+}
+
+/* Force dropdown toggle buttons to match other links */
+.navbar-dark .nav-link.dropdown-toggle {
+    color: white !important;
+    background-color: transparent !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Active page link glow effect */
+.active-link {
+    background-color: rgba(90, 216, 255, 0.7) !important; /* Softer blue tone */
+    color: black !important;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #4fb3d4, 0 0 100px rgba(90, 216, 255, 0.7);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Spread nav links evenly */
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Margin before and after brand */
+.navbar-brand.margin {
+    margin-left: 5rem;
+    margin-right: 1.5rem;
+}

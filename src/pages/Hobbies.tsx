@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Education: React.FC = () => {
+const Hobbies: React.FC = () => {
     return (
         <div>
             <p>This is the education page</p>
-        </div>
+    </div>
 
-    );
+);
 
 };
 
-export default Education;
+export default Hobbies;

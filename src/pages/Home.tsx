@@ -2,11 +2,10 @@ import React from 'react';
 
 const Home: React.FC = () => {
     return (
-        <div>
 
-        </div>
+        <p>This is the Home landing page</p>
 
-);
+    );
 
 };
 
