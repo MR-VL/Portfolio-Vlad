@@ -9,9 +9,8 @@ function Nav() {
     const base = '/Portfolio-Vlad';
     const element = (<FontAwesomeIcon icon={faHeartPulse} className="pulse-icon" />);
     const location = useLocation();
-    const isActive = (path) => location.pathname === `${base}${path}`;
-    const isAnyActive = (paths) => paths.some(path => location.pathname === `${base}${path}`);
-
+    const isActive = (path: string) => location.pathname === `${base}${path}`;
+    const isAnyActive = (paths: string[]) => paths.some((path: string) => location.pathname === `${base}${path}`);
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
             <LinkContainer to={`${base}/Home`}>
@@ -28,8 +27,7 @@ function Nav() {
                             Home
                         </BootstrapNav.Link>
                     </LinkContainer>
-
-
+                    
                     <LinkContainer to={`${base}/Education`}>
                         <BootstrapNav.Link className={`margin ${isActive('/Education') ? 'active-link' : ''}`}>
                             Education
@@ -80,7 +78,7 @@ function Nav() {
 
                     <NavDropdown
                         className={`margin ${isAnyActive([
-                            '/Puzzle', '/Create-Puzzle', '/Edit-Puzzle', '/Share-Puzzle', '/Archive-Puzzle'
+                            '/AboutMe', '/Skills', '/CurrentProjects', '/Hobbies', '/Contact'
                         ]) ? 'active-link' : ''}`}
                         title="About Me"
                         id="aboutme-dropdown"
@@ -105,14 +103,7 @@ function Nav() {
                             <NavDropdown.Item className="margin">Contact</NavDropdown.Item>
                         </LinkContainer>
 
-
-
-
                     </NavDropdown>
-
-
-
-
 
                 </BootstrapNav>
             </Navbar.Collapse>
