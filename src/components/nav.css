@@ -4,18 +4,13 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover styles for nav links and dropdown items */
+/* Hover styles for nav links, dropdown items, and brand */
 .navbar-dark .nav-link.margin:hover,
-.navbar-dark .dropdown-item.margin:hover {
-    background-color: #65c7ff !important;
-    color: black !important;
-    border-radius: 10px;
-}
-
-/* Hover style for brand */
+.navbar-dark .dropdown-item.margin:hover,
+.navbar-dark .nav-link.dropdown-toggle:hover,
 .navbar-dark .navbar-brand.margin:hover {
+    background-color: #4fb3d4 !important;
     color: black !important;
-    background-color: #65c7ff;
     border-radius: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -25,15 +20,21 @@
     background-color: rgba(101, 199, 255, 0.61);
 }
 
-/* Hover effect for dropdown toggle buttons (e.g., "Security Info", "Puzzle Info") */
-.navbar-dark .nav-link.dropdown-toggle:hover {
-    background-color: #65c7ff !important;
-    color: black !important;
-    border-radius: 10px;
+/* Force dropdown toggle buttons to match other links */
+.navbar-dark .nav-link.dropdown-toggle {
+    color: white !important;
+    background-color: transparent !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
+/* Active page link glow effect */
+.active-link {
+    background-color: rgba(90, 216, 255, 0.7) !important; /* Softer blue tone */
+    color: black !important;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #4fb3d4, 0 0 100px rgba(90, 216, 255, 0.7);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
 
 /* Spread nav links evenly */
 .navbar-nav {
@@ -47,18 +48,4 @@
 .navbar-brand.margin {
     margin-left: 5rem;
     margin-right: 1.5rem;
-}
-
-/* Force dropdown toggle buttons (e.g., "Security Info") to match other links */
-.navbar-dark .nav-link.dropdown-toggle {
-    color: white !important;
-    background-color: transparent !important;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.active-link {
-    background-color: #65c7ff !important;
-    color: black !important;
-    border-radius: 10px;
-    box-shadow: 0 0 8px #65c7ff, 0 0 16px #65c7ff;
 }

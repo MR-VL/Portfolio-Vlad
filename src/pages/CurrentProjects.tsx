@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Education: React.FC = () => {
+const CurrentProjects: React.FC = () => {
     return (
         <div>
             <p>This is the education page</p>
@@ -10,4 +10,4 @@ const Education: React.FC = () => {
 
 };
 
-export default Education;
+export default CurrentProjects;

@@ -29,73 +29,90 @@ function Nav() {
                         </BootstrapNav.Link>
                     </LinkContainer>
 
+
+                    <LinkContainer to={`${base}/Education`}>
+                        <BootstrapNav.Link className={`margin ${isActive('/Education') ? 'active-link' : ''}`}>
+                            Education
+                        </BootstrapNav.Link>
+                    </LinkContainer>
+
+                    <LinkContainer to={`${base}/Experience`}>
+                        <BootstrapNav.Link className={`margin ${isActive('/Experience') ? 'active-link' : ''}`}>
+                            Experience
+                        </BootstrapNav.Link>
+                    </LinkContainer>
+
                     <NavDropdown
                         className={`margin ${isAnyActive([
-                            '/Security', '/Registration', '/Authentication', '/Login', '/Logout'
+                            '/Contributions', '/MyProjects', '/WorkContributions', '/EventParticipation', '/Organizations'
                         ]) ? 'active-link' : ''}`}
-                        title="Security Info"
-                        id="security-dropdown"
+                        title="Contributions and Projects"
+                        id="contributions-dropdown"
                     >
 
-                    <LinkContainer to={`${base}/Security`}>
-                            <NavDropdown.Item className="margin">Security Overview</NavDropdown.Item>
+                        <LinkContainer to={`${base}/Contributions`}>
+                            <NavDropdown.Item className="margin">Contributions Overview</NavDropdown.Item>
                         </LinkContainer>
-                        <LinkContainer to={`${base}/Registration`}>
-                            <NavDropdown.Item className="margin">Registration</NavDropdown.Item>
+
+                        <LinkContainer to={`${base}/MyProjects`}>
+                            <NavDropdown.Item className="margin">My Projects</NavDropdown.Item>
                         </LinkContainer>
-                        <LinkContainer to={`${base}/Authentication`}>
-                            <NavDropdown.Item className="margin">Authentication</NavDropdown.Item>
+
+                        <LinkContainer to={`${base}/WorkContributions`}>
+                            <NavDropdown.Item className="margin">Work Contributions</NavDropdown.Item>
                         </LinkContainer>
-                        <LinkContainer to={`${base}/Login`}>
-                            <NavDropdown.Item className="margin">Login</NavDropdown.Item>
+
+                        <LinkContainer to={`${base}/Organizations`}>
+                            <NavDropdown.Item className="margin">Organizations</NavDropdown.Item>
                         </LinkContainer>
-                        <LinkContainer to={`${base}/Logout`}>
-                            <NavDropdown.Item className="margin">Logout</NavDropdown.Item>
+
+                        <LinkContainer to={`${base}/EventParticipation`}>
+                            <NavDropdown.Item className="margin">Event Participation</NavDropdown.Item>
                         </LinkContainer>
                     </NavDropdown>
+
+
+                    <LinkContainer to={`${base}/Certifications`}>
+                        <BootstrapNav.Link className={`margin ${isActive('/Certifications') ? 'active-link' : ''}`}>
+                            Certifications
+                        </BootstrapNav.Link>
+                    </LinkContainer>
 
                     <NavDropdown
                         className={`margin ${isAnyActive([
                             '/Puzzle', '/Create-Puzzle', '/Edit-Puzzle', '/Share-Puzzle', '/Archive-Puzzle'
                         ]) ? 'active-link' : ''}`}
-                        title="Puzzle Info"
-                        id="puzzle-dropdown"
+                        title="About Me"
+                        id="aboutme-dropdown"
                     >
+                        <LinkContainer to={`${base}/AboutMe`}>
+                            <NavDropdown.Item className="margin">About Me Overview</NavDropdown.Item>
+                        </LinkContainer>
 
-                    <LinkContainer to={`${base}/Puzzle`}>
-                            <NavDropdown.Item className="margin">Puzzle Overview</NavDropdown.Item>
+                        <LinkContainer to={`${base}/Skills`}>
+                            <NavDropdown.Item className="margin">Skills</NavDropdown.Item>
                         </LinkContainer>
-                        <LinkContainer to={`${base}/Create-Puzzle`}>
-                            <NavDropdown.Item className="margin">Create a Puzzle</NavDropdown.Item>
+
+                        <LinkContainer to={`${base}/CurrentProjects`}>
+                            <NavDropdown.Item className="margin">Current Projects</NavDropdown.Item>
                         </LinkContainer>
-                        <LinkContainer to={`${base}/Edit-Puzzle`}>
-                            <NavDropdown.Item className="margin">Edit Puzzle</NavDropdown.Item>
+
+                        <LinkContainer to={`${base}/Hobbies`}>
+                            <NavDropdown.Item className="margin">Hobbies</NavDropdown.Item>
                         </LinkContainer>
-                        <LinkContainer to={`${base}/Share-Puzzle`}>
-                            <NavDropdown.Item className="margin">Share Puzzle</NavDropdown.Item>
+
+                        <LinkContainer to={`${base}/Contact`}>
+                            <NavDropdown.Item className="margin">Contact</NavDropdown.Item>
                         </LinkContainer>
-                        <LinkContainer to={`${base}/Archive-Puzzle`}>
-                            <NavDropdown.Item className="margin">Archive Puzzle</NavDropdown.Item>
-                        </LinkContainer>
+
+
+
+
                     </NavDropdown>
 
-                    <LinkContainer to={`${base}/My-Puzzlez`}>
-                        <BootstrapNav.Link className={`margin ${isActive('/My-Puzzlez') ? 'active-link' : ''}`}>
-                            My Puzzlez
-                        </BootstrapNav.Link>
-                    </LinkContainer>
 
-                    <LinkContainer to={`${base}/My-Completed-Puzzlez`}>
-                        <BootstrapNav.Link className={`margin ${isActive('/My-Completed-Puzzlez') ? 'active-link' : ''}`}>
-                            My Completed Puzzlez
-                        </BootstrapNav.Link>
-                    </LinkContainer>
 
-                    <LinkContainer to={`${base}/Approve-Puzzlez`}>
-                        <BootstrapNav.Link className={`margin ${isActive('/Approve-Puzzlez') ? 'active-link' : ''}`}>
-                            Approve Completion
-                        </BootstrapNav.Link>
-                    </LinkContainer>
+
 
                 </BootstrapNav>
             </Navbar.Collapse>

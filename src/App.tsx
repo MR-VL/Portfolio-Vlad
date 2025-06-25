@@ -10,6 +10,12 @@ import Organizations from "./pages/Organizations.tsx";
 import Contributions from "./pages/Contributions.tsx";
 import AboutMe from "./pages/AboutMe.tsx";
 import Nav from './components/nav';
+import EventParticipation from "./pages/EventParticipation.tsx";
+import Contact from "./pages/Contact.tsx";
+import Hobbies from "./pages/Hobbies.tsx";
+import Skills from "./pages/Skills.tsx";
+import CurrentProjects from "./pages/CurrentProjects.tsx";
+
 
 function App() {
     const base = '/Portfolio-Vlad';
@@ -33,6 +39,11 @@ function App() {
                 <Route path={`${base}/Organizations`} element={<Organizations/>} />
                 <Route path={`${base}/Contributions`} element={<Contributions/>} />
                 <Route path={`${base}/AboutMe`} element={<AboutMe/>} />
+                <Route path={`${base}/Contact`} element={<Contact/>} />
+                <Route path={`${base}/EventParticipation`} element={<EventParticipation/>} />
+                <Route path={`${base}/Hobbies`} element={<Hobbies/>} />
+                <Route path={`${base}/Skills`} element={<Skills/>} />
+                <Route path={`${base}/CurrentProjects`} element={<CurrentProjects/>} />
             </Routes>
         </Router>
     );
