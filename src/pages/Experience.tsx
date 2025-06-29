@@ -1,6 +1,7 @@
 import React from 'react';
 import tamuctLogo from "../assets/tamuct_logo.jpeg";
 import cciLogo from "../assets/cci.png";
+import { Link } from 'react-router-dom';
 
 const Experience: React.FC = () => {
     return (
@@ -25,6 +26,15 @@ const Experience: React.FC = () => {
                     <p><strong>Position Title: </strong> Student Worker / Researcher Assistant</p>
                     <p className="mb-1"><strong>Company:</strong> Texas A&M Central Texas | Killeen Tx. 76549</p>
                     <p className="mb-1"><strong>Area of Focus:</strong> Data Analytics, Machine Learning, Internet Of Things</p>
+                    <p className="mb-1">
+                        <strong>
+                            <Link to="/WorkContributions" className="text-info text-decoration-none">
+                                Click to see major contributions and achievements.
+                            </Link>
+                        </strong>
+                    </p>
+
+
 
 
 
