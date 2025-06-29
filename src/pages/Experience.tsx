@@ -28,7 +28,7 @@ const Experience: React.FC = () => {
                     <p className="mb-1"><strong>Area of Focus:</strong> Data Analytics, Machine Learning, Internet Of Things</p>
                     <p className="mb-1">
                         <strong>
-                            <Link to="/WorkContributions" className="text-info text-decoration-none">
+                            <Link to="/Portfolio-Vlad/WorkContributions" className="text-info text-decoration-none">
                                 Click to see major contributions and achievements.
                             </Link>
                         </strong>
