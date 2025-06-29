@@ -11,10 +11,10 @@ type Cert = {
 
 
 const certifications: Cert[] = [
-    { title: 'MTA:98-367: Security Fundamentals', provider: 'Microsoft', date: '04-29-2021', certificateId:"cdUU-uGHM"},
-    { title: 'MTA:98-381: Introduction to Programming using Python', provider: 'Microsoft', date: '03-05-2020', certificateId:"odNU-uSHL"},
-    { title: 'MTA:98-383: Introduction to Programming using HTML and CSS', provider: 'Microsoft', date: '05-22-2019', certificateId:"wbpVL-H9ad"},
-    { title: 'Graphic Design & Illustration using Adobe Illustrator 2020 (v 24.x)', provider: 'Adobe', date: '04-26-2021', expiration:"04-26-2024", certificateId:"JSoq-4wkM"},
+    { title: 'MTA:98-367: Security Fundamentals', provider: 'Microsoft', date: '04-29-2021', certificateId:"cdUU-uGHM", url:'https://github.com/MR-VL/Portfolio-Vlad/blob/0331cf67f4f36155bae3a13714d7731000352692/public/Certifications/securityfundamentals.pdf'},
+    { title: 'MTA:98-381: Introduction to Programming using Python', provider: 'Microsoft', date: '03-05-2020', certificateId:"odNU-uSHL", url:'https://github.com/MR-VL/Portfolio-Vlad/blob/0331cf67f4f36155bae3a13714d7731000352692/public/Certifications/pythoncert.pdf'},
+    { title: 'MTA:98-383: Introduction to Programming using HTML and CSS', provider: 'Microsoft', date: '05-22-2019', certificateId:"wbpVL-H9ad", url:'https://github.com/MR-VL/Portfolio-Vlad/blob/0331cf67f4f36155bae3a13714d7731000352692/public/Certifications/htmlcert.pdf'},
+    { title: 'Graphic Design & Illustration using Adobe Illustrator 2020 (v 24.x)', provider: 'Adobe', date: '04-26-2021', expiration:"04-26-2024", certificateId:"JSoq-4wkM", url:'https://github.com/MR-VL/Portfolio-Vlad/blob/0331cf67f4f36155bae3a13714d7731000352692/public/Certifications/illustrator.pdf'},
     { title: 'Zendesk Customer Service Professional Certificate', provider: 'LinkedIn', date: '05-10-2024', url:'https://www.linkedin.com/learning/certificates/6144eb0ef207147a588df96e2f66c8e734090b7e2fd6b6edddc6acb0c790e399?u=222312266'},
     { title: 'SS&C Blue Prism Robotic Process Automation Professional Certificate', provider: 'LinkedIn', date: '04-05-2024', url:'https://www.linkedin.com/learning/certificates/5484ef4c29cbd4d09935df9a4497cae59852e9e5482ca8cb7cfbfb4e4810333f?u=222312266'},
     { title: 'ServiceNow IT Leadership Professional Certificate', provider: 'LinkedIn', date: '04-19-2024', url:'https://www.linkedin.com/learning/certificates/affeec2408e685845c805890b9f7972b30300af3afa0000b0bfd0a121b404867?u=222312266'},
