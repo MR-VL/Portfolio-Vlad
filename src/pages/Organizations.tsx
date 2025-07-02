@@ -1,8 +1,5 @@
 import React from 'react';
 
-import {Link} from "react-router-dom";
-
-
 const Organizations: React.FC = () => {
     return (
         <div className="container mt-5 text-white">
@@ -22,17 +19,12 @@ const Organizations: React.FC = () => {
                             Sherlock Project
                         </h3>
                     </div>
-                    <h5 className="text-warning fw-bold mb-1">Feb. 2025 - May 2025</h5>
+                    <h5 className="text-warning fw-bold mb-1">Aug. 2025 - Present</h5>
+
+
                     {/*<p><strong>Position Title: </strong> Student Worker / Researcher Assistant</p>*/}
                     {/*<p className="mb-1"><strong>Company:</strong> Texas A&M Central Texas | Killeen Tx. 76549</p>*/}
                     {/*<p className="mb-1"><strong>Area of Focus:</strong> Data Analytics, Machine Learning, Internet Of Things</p>*/}
-                    {/*<p className="mb-1">*/}
-                    {/*    <strong>*/}
-                    {/*        <Link to="/Portfolio-Vlad/WorkContributions" className="text-info text-decoration-none">*/}
-                    {/*            Click to see major contributions and achievements.*/}
-                    {/*        </Link>*/}
-                    {/*    </strong>*/}
-                    {/*</p>*/}
 
 
 
