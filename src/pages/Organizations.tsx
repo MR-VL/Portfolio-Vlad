@@ -70,7 +70,32 @@ const Organizations: React.FC = () => {
                     </p>
                 </div>
 
-
+                {/* RIGHT COLUMN — IMAGES */}
+                <div className="col-md-4 text-end">
+                    <img
+                        src={demo}
+                        alt="Sherlock demo image"
+                        className="rounded mb-4"
+                        style={{ width: '100%', maxWidth: '400px', height: 'auto' }}
+                    />
+                    <a
+                        href="https://github.com/sherlock-project/sherlock/graphs/contributors"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            src="https://contrib.rocks/image?&columns=12&max=1000&repo=sherlock-project/sherlock"
+                            alt="Contributors"
+                            style={{
+                                width: '100%',
+                                maxWidth: '450px',
+                                height: 'auto',
+                                transform: 'scale(0.85)',
+                                transformOrigin: 'top left',
+                            }}
+                        />
+                    </a>
+                </div>
             </div>
         </div>
     );
