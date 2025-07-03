@@ -22,6 +22,8 @@ const Organizations: React.FC = () => {
                         </h3>
                     </div>
 
+
+
                     <h5 className="text-warning fw-bold mb-1">Aug. 2025 - Present</h5>
 
                     <p><strong>GitHub Stars:</strong> ⭐66.4k+⭐</p>
@@ -68,21 +70,23 @@ const Organizations: React.FC = () => {
                         individuals by scanning for username availability and activity across platforms ranging from
                         mainstream social networks to niche services.
                     </p>
-                </div>
-
-                {/* RIGHT COLUMN — IMAGES */}
-                <div className="col-md-4 d-flex flex-column align-items-end justify-content-start">
                     <img
                         src={demo}
                         alt="Sherlock demo image"
-                        className="rounded"
+                        className="rounded d-block mx-auto"
                         style={{
                             width: '100%',
-                            maxWidth: '400px',
+                            maxWidth: '600px',
                             height: 'auto',
                             marginBottom: '1rem'
                         }}
                     />
+
+                </div>
+
+                {/* RIGHT COLUMN — IMAGES */}
+                <div className="col-md-4 d-flex flex-column align-items-end justify-content-start">
+
                     <a
                         href="https://github.com/sherlock-project/sherlock/graphs/contributors"
                         target="_blank"
