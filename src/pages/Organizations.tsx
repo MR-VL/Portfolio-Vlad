@@ -1,14 +1,15 @@
 import React from 'react';
 import demo from '../assets/demo.png';
-import sherlock from '../assets/sherlock-logo.png'
+import sherlock from '../assets/sherlock-logo.png';
+
 const Organizations: React.FC = () => {
     return (
         <div className="container mt-5 text-white">
             <h1 className="mb-4 border-bottom pb-2">Organizations</h1>
 
-            <div className="row align-items-center pb-4 mb-2">
-
-                <div className="col-md-9 narrow-text p-4 rounded">
+            <div className="row align-items-start pb-4 mb-2">
+                {/* LEFT COLUMN — TEXTUAL CONTENT */}
+                <div className="col-md-8 narrow-text p-4 rounded">
                     <div className="d-flex align-items-center mb-3">
                         <img
                             src={sherlock}
@@ -19,53 +20,60 @@ const Organizations: React.FC = () => {
                         <h3 className="text-info mb-0">
                             Sherlock Project
                         </h3>
-
                     </div>
+
                     <h5 className="text-warning fw-bold mb-1">Aug. 2025 - Present</h5>
 
-                    <div>
-                        <p><strong>Role: </strong> Individual Contributor</p>
-                        <p><strong>Area of Focus:</strong> JSON site list maintenance.</p>
-                    </div>
+                    <p><strong>GitHub Stars:</strong> ⭐66.4k+⭐</p>
+                    <p><strong>Role:</strong> Individual Contributor</p>
+                    <p><strong>Recognition:</strong> Top 50 Overall Contributors</p>
 
+                    <p>
+                        <strong>GitHub Repository:</strong>{' '}
+                        <a
+                            href="https://github.com/sherlock-project/sherlock"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-info"
+                        >
+                            sherlock-project/sherlock
+                        </a>
+                    </p>
 
+                    <p>
+                        As a recognized <strong>Top 50 Contributor</strong> to the project, I have played an active role
+                        in maintaining and improving its JSON-based site configuration system. My contributions focus on
+                        keeping the tool up-to-date and functional by:
+                    </p>
+                    <ul>
+                        <li>➕ Added support for a newly requested platform by responding to a user-raised GitHub issue</li>
+                        <li>🔧 Fixed a broken site entry using URL pattern probing and validation techniques</li>
+                        <li>❌ Removed two outdated or unreachable sites to maintain the accuracy and performance of the tool</li>
+                    </ul>
 
+                    <hr className="text-secondary" />
 
+                    <p>
+                        <strong>Sherlock</strong> is a widely adopted open-source tool designed to detect the presence
+                        of usernames across hundreds of social media platforms, websites, and online services. By
+                        automating the search process, Sherlock significantly simplifies digital footprint
+                        analysis, making it a valuable asset for cybersecurity professionals, penetration testers, OSINT
+                        (Open Source Intelligence) investigators, digital forensics analysts, and privacy researchers
+                        worldwide.
+                    </p>
 
-
-                    {/*<p className="mb-1"><strong>Academic Achievements:</strong> N/A</p>*/}
-
-                    {/*<p className="text-light mb-1"><strong>Job Responsibilities: </strong> </p>*/}
-                    {/*<ul className="mb-1">*/}
-                    {/*    <li className="mb-1">Supported guided cybersecurity research using the CIC IoT 2023 dataset, focusing on machine learning-based*/}
-                    {/*        threat detection.</li>*/}
-                    {/*    <li className="mb-1">Developed and evaluated classification models (Random Forest, XGBoost, VAE) alongside sampling methods*/}
-                    {/*        (SMOTE, SMOTE-ENN, SMOTE-Tomek, ADASYN, stratified sampling, data diffusion and undersampling) to*/}
-                    {/*        improve detection accuracy and class balance.</li>*/}
-                    {/*    <li className="mb-1">Conducted in-depth performance analysis across pre-processing strategies and model combinations, identifying*/}
-                    {/*        trade-offs in detection effectiveness and stealth.</li>*/}
-                    {/*    <li className="mb-1">Optimized large-scale data workflows using DASK and custom Python scripts for statistical analysis and label*/}
-                    {/*        encoding.</li>*/}
-                    {/*    <li className="mb-1">Reviewed and integrated research on GNNs, GANs, CNNs, and Transformer models to shape experimental design*/}
-                    {/*        and align with evolving research goals.</li>*/}
-                    {/*    <li className="mb-1">Analyzed performance trade-offs across pre-processing strategies and model combinations to optimize for detection effectiveness and stealth.</li>*/}
-                    {/*</ul>*/}
+                    <p>
+                        With over 66,000 stars on GitHub, Sherlock has become one of the most popular OSINT tools in the
+                        cybersecurity ecosystem. It helps professionals quickly identify the online presence of
+                        individuals by scanning for username availability and activity across platforms ranging from
+                        mainstream social networks to niche services.
+                    </p>
                 </div>
-                <div className="col-md-4 text-end">
-                    <img
-                        src={demo}
-                        alt="Sherlock demo image"
-                        className="rounded me-5"
-                        style={{ width: '500px', height: 'auto' }}
-                    />
-                </div>
+
+
             </div>
-
         </div>
-
-
     );
-
 };
 
 export default Organizations;
