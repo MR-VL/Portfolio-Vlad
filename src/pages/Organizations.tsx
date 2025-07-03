@@ -1,30 +1,33 @@
 import React from 'react';
-
+import demo from '../assets/demo.png';
+import sherlock from '../assets/sherlock-logo.png'
 const Organizations: React.FC = () => {
     return (
         <div className="container mt-5 text-white">
             <h1 className="mb-4 border-bottom pb-2">Organizations</h1>
 
-            <div className="row align-items-center pb-4 mb-5">
+            <div className="row align-items-center pb-4 mb-2">
 
                 <div className="col-md-9 narrow-text p-4 rounded">
                     <div className="d-flex align-items-center mb-3">
-                        {/*<img*/}
-                        {/*    src={tamuctLogo}*/}
-                        {/*    alt="Texas A&M Central Texas Logo"*/}
-                        {/*    className="img-fluid rounded me-4"*/}
-                        {/*    style={{ maxHeight: '100px' }}*/}
-                        {/*/>*/}
+                        <img
+                            src={sherlock}
+                            alt="Sherlock Project Logo"
+                            className="img-fluid rounded me-4"
+                            style={{ maxHeight: '100px' }}
+                        />
                         <h3 className="text-info mb-0">
                             Sherlock Project
                         </h3>
+
                     </div>
                     <h5 className="text-warning fw-bold mb-1">Aug. 2025 - Present</h5>
 
+                    <div>
+                        <p><strong>Role: </strong> Individual Contributor</p>
+                        <p><strong>Area of Focus:</strong> JSON site list maintenance.</p>
+                    </div>
 
-                    {/*<p><strong>Position Title: </strong> Student Worker / Researcher Assistant</p>*/}
-                    {/*<p className="mb-1"><strong>Company:</strong> Texas A&M Central Texas | Killeen Tx. 76549</p>*/}
-                    {/*<p className="mb-1"><strong>Area of Focus:</strong> Data Analytics, Machine Learning, Internet Of Things</p>*/}
 
 
 
@@ -49,12 +52,12 @@ const Organizations: React.FC = () => {
                     {/*</ul>*/}
                 </div>
                 <div className="col-md-4 text-end">
-                    {/*<img*/}
-                    {/*    src={cciLogo}*/}
-                    {/*    alt="Texas A&M Central Texas Logo"*/}
-                    {/*    className="rounded me-5"*/}
-                    {/*    style={{ width: '500px', height: 'auto' }}*/}
-                    {/*/>*/}
+                    <img
+                        src={demo}
+                        alt="Sherlock demo image"
+                        className="rounded me-5"
+                        style={{ width: '500px', height: 'auto' }}
+                    />
                 </div>
             </div>
 
