@@ -1,13 +1,15 @@
 import React from 'react';
-import logo from "../assets/Codebreaker.JPG";
+import logo from "../assets/Codebreaker.jpg";
+import task1 from "../assets/nsaTask1.jpeg";
 
 const EventParticipation: React.FC = () => {
     return (
         <div className="container mt-5 text-white">
             <h1 className="mb-4 border-bottom pb-2">Event Participation</h1>
 
-            <div className="row align-items-center border-bottom border-secondary pb-4 mb-5">
-                <div className="col-md-9 narrow-text p-4 rounded">
+            <div className="row align-items-start border-bottom border-secondary pb-4 mb-5">
+                {/* Main content on the left */}
+                <div className="col-md-8 narrow-text p-4 rounded">
                     <h5 className="text-warning fw-bold mb-1">
                         September 16th, 2024 – January 17th, 2025
                     </h5>
@@ -54,6 +56,21 @@ const EventParticipation: React.FC = () => {
                         intelligence-driven defense.
                     </blockquote>
                 </div>
+
+
+                <div className="col-md-4 text-center mt-5">
+                    <img
+                        src={task1}
+                        alt="NSA Codebreaker Task 1"
+                        className="img-fluid rounded shadow"
+                        style={{
+                            height: "500px",
+                            width: "100%",
+                            objectFit: "cover"
+                        }}
+                    />
+                </div>
+
             </div>
         </div>
     );
