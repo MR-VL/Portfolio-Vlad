@@ -79,7 +79,7 @@ const EventParticipation: React.FC = () => {
                 {/* Main content on the left */}
                 <div className="col-md-8 narrow-text p-4 rounded">
                     <h5 className="text-warning fw-bold mb-1">
-                        March 2025
+                        October 1, 2020 – October 30, 2020
                     </h5>
 
                     <div className="d-flex align-items-center mb-3">
