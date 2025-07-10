@@ -47,12 +47,26 @@ const Organizations: React.FC = () => {
                         in maintaining and improving its JSON-based site configuration system. My contributions focus on
                         keeping the tool up-to-date and functional by:
                     </p>
-                    <ul>
-                        <li>➕ Added support for a newly requested platform by responding to a user-raised GitHub issue</li>
-                        <li>🔧 Fixed a broken site entry using URL pattern probing and validation techniques</li>
-                        <li>❌ Removed two outdated or unreachable sites to maintain the accuracy and performance of the tool</li>
-                    </ul>
 
+                    <hr className="text-secondary" />
+                    <div className="mt-4">
+                        <h5 className="text-warning fw-bold">🕓 Pending Commits</h5>
+                        <ul>
+                            <li>➕ Added support for a new platform recently requested via GitHub Issues</li>
+                            <li>❌ Removed a deprecated site that was permanently shut down</li>
+                            <li>✏️ Fixed minor typos and improved clarity in the project README</li>
+                        </ul>
+                    </div>
+                    <hr className="text-secondary" />
+
+                    <div className="mt-4">
+                        <h5 className="text-warning fw-bold">🕓 Merged Commits</h5>
+                        <ul>
+                            <li>➕ Added support for a newly requested platform by responding to a user-raised GitHub issue</li>
+                            <li>🔧 Fixed a broken site entry using URL pattern probing and validation techniques</li>
+                            <li>❌ Removed two outdated or unreachable sites to maintain the accuracy and performance of the tool</li>
+                        </ul>
+                    </div>
                     <hr className="text-secondary" />
 
                     <p>
