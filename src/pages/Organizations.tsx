@@ -48,26 +48,58 @@ const Organizations: React.FC = () => {
                         keeping the tool up-to-date and functional by:
                     </p>
 
-                    <hr className="text-secondary" />
+                    <hr/>
                     <div className="mt-4">
                         <h5 className="text-warning fw-bold">🕓 Pending Commits</h5>
-                        <ul>
-                            <li>➕ Added support for a new platform recently requested via GitHub Issues</li>
-                            <li>❌ Removed a deprecated site that was permanently shut down</li>
-                            <li>✏️ Fixed minor typos and improved clarity in the project README</li>
-                        </ul>
-                    </div>
-                    <hr className="text-secondary" />
+                        <div>
+                            <p>
+                                <a
+                                    href="https://github.com/sherlock-project/sherlock/pull/2493"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-success"
+                                >
+                                    ( PR #2494)
+                                </a>
 
-                    <div className="mt-4">
-                        <h5 className="text-warning fw-bold">🕓 Merged Commits</h5>
-                        <ul>
-                            <li>➕ Added support for a newly requested platform by responding to a user-raised GitHub issue</li>
-                            <li>🔧 Fixed a broken site entry using URL pattern probing and validation techniques</li>
-                            <li>❌ Removed two outdated or unreachable sites to maintain the accuracy and performance of the tool</li>
-                        </ul>
+                            </p>
+
+                            <ul>
+                                <li>Added support for a new platform (PyChess) recently requested via GitHub Issues.
+                                    <a
+                                        href="https://github.com/sherlock-project/sherlock/issues/2492"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-info"
+                                    >
+                                        ( Issue #2492 )
+                                    </a>
+                                </li>
+                                <li>Removed a deprecated site (TorrentGalaxy) that was permanently shut down.
+                                    <a
+                                        href="https://github.com/sherlock-project/sherlock/issues/2494"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-info"
+                                    >
+                                        ( Issue #2494 )
+                                    </a>
+                                </li>
+                                <li>Fixed minor typos and improved clarity in the project README.
+                                    <a
+                                        href="https://github.com/sherlock-project/sherlock/issues/2495"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-info"
+                                    >
+                                        ( Issue #2495 )
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
-                    <hr className="text-secondary" />
+
 
                     <p>
                         <strong>Sherlock</strong> is a widely adopted open-source tool designed to detect the presence
