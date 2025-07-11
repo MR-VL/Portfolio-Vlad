@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 type Cert = {
     title: string;
-    provider: 'Microsoft' | 'Adobe' | 'LinkedIn';
+    provider: 'Microsoft' | 'Adobe' | 'LinkedIn' | 'TAMUCT';
     date: string;
     url?: string;
     certificateId?: string;
@@ -11,6 +11,8 @@ type Cert = {
 
 
 const certifications: Cert[] = [
+    { title: 'Business Analytics & Intelligence UG. Micro-credential', provider: 'TAMUCT', date: '06-16-2025', url:'https://www.parchment.com/u/award/490894183ee048322cd3fca4cda8fa40'},
+    { title: 'Cybersecurity UG. Micro-credential', provider: 'TAMUCT', date: '06-16-2025', url:'https://www.parchment.com/u/award/3036a03922922f47291b879fcb0cca30'},
     { title: 'MTA:98-367: Security Fundamentals', provider: 'Microsoft', date: '04-29-2021', certificateId:"cdUU-uGHM", url:'https://github.com/MR-VL/Portfolio-Vlad/blob/0331cf67f4f36155bae3a13714d7731000352692/public/Certifications/securityfundamentals.pdf'},
     { title: 'MTA:98-381: Introduction to Programming using Python', provider: 'Microsoft', date: '03-05-2020', certificateId:"odNU-uSHL", url:'https://github.com/MR-VL/Portfolio-Vlad/blob/0331cf67f4f36155bae3a13714d7731000352692/public/Certifications/pythoncert.pdf'},
     { title: 'MTA:98-383: Introduction to Programming using HTML and CSS', provider: 'Microsoft', date: '05-22-2019', certificateId:"wbpVL-H9ad", url:'https://github.com/MR-VL/Portfolio-Vlad/blob/0331cf67f4f36155bae3a13714d7731000352692/public/Certifications/htmlcert.pdf'},
@@ -29,13 +31,13 @@ const certifications: Cert[] = [
 ];
 
 const Certifications: React.FC = () => {
-    const [filter, setFilter] = useState<'All' | 'Microsoft' | 'Adobe' | 'LinkedIn'>('All');
+    const [filter, setFilter] = useState<'All' | 'Microsoft' | 'Adobe' | 'LinkedIn' | 'TAMUCT'>('All');
 
     const filteredCerts = filter === 'All'
         ? certifications
         : certifications.filter(cert => cert.provider === filter);
 
-    const providers: ('All' | 'Microsoft' | 'Adobe' | 'LinkedIn')[] = ['All', 'Microsoft', 'Adobe', 'LinkedIn'];
+    const providers: ('All' | 'Microsoft' | 'Adobe' | 'LinkedIn' | 'TAMUCT')[] = ['All', 'Microsoft', 'Adobe', 'LinkedIn', 'TAMUCT'];
 
     return (
         <div className="container mt-5 text-white">
