@@ -6,7 +6,7 @@ import Education from "./pages/Education.tsx";
 import Certifications from "./pages/Certifications.tsx";
 import Experience from "./pages/Experience.tsx";
 import WorkContributions from "./pages/WorkContributions.tsx";
-import Organizations from "./pages/Organizations.tsx";
+import OpenSource from "./pages/OpenSource.tsx";
 import Contributions from "./pages/Contributions.tsx";
 import AboutMe from "./pages/AboutMe.tsx";
 import Nav from './components/nav';
@@ -36,7 +36,7 @@ function App() {
                 <Route path={`${base}/MyProjects`} element={<MyProjects/>} />
                 <Route path={`${base}/WorkContributions`} element={<WorkContributions/>} />
                 <Route path={`${base}/Certifications`} element={<Certifications/>} />
-                <Route path={`${base}/Organizations`} element={<Organizations/>} />
+                <Route path={`${base}/OpenSource`} element={<OpenSource/>} />
                 <Route path={`${base}/Contributions`} element={<Contributions/>} />
                 <Route path={`${base}/AboutMe`} element={<AboutMe/>} />
                 <Route path={`${base}/Contact`} element={<Contact/>} />

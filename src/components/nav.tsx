@@ -42,7 +42,7 @@ function Nav() {
 
                     <NavDropdown
                         className={`margin ${isAnyActive([
-                            '/Contributions', '/MyProjects', '/WorkContributions', '/EventParticipation', '/Organizations'
+                            '/Contributions', '/MyProjects', '/WorkContributions', '/EventParticipation', '/OpenSource'
                         ]) ? 'active-link' : ''}`}
                         title="Contributions and Projects"
                         id="contributions-dropdown"
@@ -60,8 +60,8 @@ function Nav() {
                             <NavDropdown.Item className="margin">Work Contributions</NavDropdown.Item>
                         </LinkContainer>
 
-                        <LinkContainer to={`${base}/Organizations`}>
-                            <NavDropdown.Item className="margin">Organizations</NavDropdown.Item>
+                        <LinkContainer to={`${base}/OpenSource`}>
+                            <NavDropdown.Item className="margin">Open Source Contributions</NavDropdown.Item>
                         </LinkContainer>
 
                         <LinkContainer to={`${base}/EventParticipation`}>

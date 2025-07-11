@@ -2,10 +2,10 @@ import React from 'react';
 import demo from '../assets/demo.png';
 import sherlock from '../assets/sherlock-logo.png';
 
-const Organizations: React.FC = () => {
+const OpenSource: React.FC = () => {
     return (
         <div className="container mt-5 text-white">
-            <h1 className="mb-4 border-bottom pb-2">Organizations</h1>
+            <h1 className="mb-4 border-bottom pb-2">Open Source Contributions</h1>
 
             <div className="row align-items-start pb-4 mb-2">
                 {/* LEFT COLUMN — TEXTUAL CONTENT */}
@@ -248,4 +248,4 @@ const Organizations: React.FC = () => {
     );
 };
 
-export default Organizations;
+export default OpenSource;
