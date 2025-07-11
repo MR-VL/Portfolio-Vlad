@@ -100,6 +100,69 @@ const Organizations: React.FC = () => {
 
                     </div>
 
+                    <hr/>
+                    <div className="mt-4">
+                        <h5 className="text-warning fw-bold">✅ Merged Commits</h5>
+                        <p>
+                            <a
+                                href="https://github.com/sherlock-project/sherlock/pull/2404"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-success"
+                            >
+                                ( PR #2404)
+                            </a>
+
+                        </p>
+                        <ul>
+                            <li>Fixed a broken site entry (Instagram) using URL pattern probing and validation techniques
+                                <a
+                                    href="https://github.com/sherlock-project/sherlock/issues/2396"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-info"
+                                >
+                                    ( Issue #2396 )
+                                </a>
+                            </li>
+
+
+                            <li>Removed website that shut down (Ask.fm) to maintain the accuracy and performance of the tool</li>
+
+                        </ul>
+                    </div>
+                    <hr className="text-secondary" />
+
+                    <div>
+                        <p>
+                            <a
+                                href="https://github.com/sherlock-project/sherlock/pull/2316"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-success"
+                            >
+                                ( PR #2316)
+                            </a>
+
+                        </p>
+
+                        <ul>
+                            <li>Added support for a new platform (AtCoder) recently requested via GitHub Issues.
+                                <a
+                                    href="https://github.com/sherlock-project/sherlock/issues/2314"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-info"
+                                >
+                                    ( Issue #2314 )
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <hr className="text-secondary" />
+
+                    <hr/>
 
                     <p>
                         <strong>Sherlock</strong> is a widely adopted open-source tool designed to detect the presence
