@@ -65,7 +65,7 @@ const Organizations: React.FC = () => {
                             </p>
 
                             <ul>
-                                <li>Added support for a new platform (PyChess) recently requested via GitHub Issues.
+                                <li className="mb-1">Added support for a new platform (PyChess) recently requested via GitHub Issues.
                                     <a
                                         href="https://github.com/sherlock-project/sherlock/issues/2492"
                                         target="_blank"
@@ -75,7 +75,7 @@ const Organizations: React.FC = () => {
                                         ( Issue #2492 )
                                     </a>
                                 </li>
-                                <li>Removed a deprecated site (TorrentGalaxy) that was permanently shut down.
+                                <li className="mb-1">Removed a deprecated site (TorrentGalaxy) that was permanently shut down.
                                     <a
                                         href="https://github.com/sherlock-project/sherlock/issues/2494"
                                         target="_blank"
@@ -115,7 +115,7 @@ const Organizations: React.FC = () => {
 
                         </p>
                         <ul>
-                            <li>Fixed a broken site entry (Instagram) using URL pattern probing and validation techniques
+                            <li className="mb-2">Fixed a broken site entry (Instagram) using URL pattern probing and validation techniques
                                 <a
                                     href="https://github.com/sherlock-project/sherlock/issues/2396"
                                     target="_blank"
@@ -161,6 +161,35 @@ const Organizations: React.FC = () => {
                         </ul>
                     </div>
                     <hr className="text-secondary" />
+
+                    <div>
+                        <p>
+                            <a
+                                href="https://github.com/sherlock-project/sherlock/pull/2265"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-success"
+                            >
+                                ( PR #2265)
+                            </a>
+
+                        </p>
+
+                        <ul>
+                            <li>Removed website that shut down (ICQ.com) to maintain the accuracy and performance of the tool
+                                <a
+                                    href="https://github.com/sherlock-project/sherlock/issues/2264"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-info"
+                                >
+                                    ( Issue #2264 )
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
 
                     <hr/>
 
