@@ -47,13 +47,151 @@ const Organizations: React.FC = () => {
                         in maintaining and improving its JSON-based site configuration system. My contributions focus on
                         keeping the tool up-to-date and functional by:
                     </p>
-                    <ul>
-                        <li>➕ Added support for a newly requested platform by responding to a user-raised GitHub issue</li>
-                        <li>🔧 Fixed a broken site entry using URL pattern probing and validation techniques</li>
-                        <li>❌ Removed two outdated or unreachable sites to maintain the accuracy and performance of the tool</li>
-                    </ul>
 
+                    <hr/>
+                    <div className="mt-4">
+                        <h5 className="text-warning fw-bold">🕓 Pending Commits</h5>
+                        <div>
+                            <p>
+                                <a
+                                    href="https://github.com/sherlock-project/sherlock/pull/2493"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-success"
+                                >
+                                    ( PR #2494)
+                                </a>
+
+                            </p>
+
+                            <ul>
+                                <li className="mb-1">Added support for a new platform (PyChess) recently requested via GitHub Issues.
+                                    <a
+                                        href="https://github.com/sherlock-project/sherlock/issues/2492"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-info"
+                                    >
+                                        ( Issue #2492 )
+                                    </a>
+                                </li>
+                                <li className="mb-1">Removed a deprecated site (TorrentGalaxy) that was permanently shut down.
+                                    <a
+                                        href="https://github.com/sherlock-project/sherlock/issues/2494"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-info"
+                                    >
+                                        ( Issue #2494 )
+                                    </a>
+                                </li>
+                                <li>Fixed minor typos and improved clarity in the project README.
+                                    <a
+                                        href="https://github.com/sherlock-project/sherlock/issues/2495"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-info"
+                                    >
+                                        ( Issue #2495 )
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <hr/>
+                    <div className="mt-4">
+                        <h5 className="text-warning fw-bold">✅ Merged Commits</h5>
+                        <p>
+                            <a
+                                href="https://github.com/sherlock-project/sherlock/pull/2404"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-success"
+                            >
+                                ( PR #2404)
+                            </a>
+
+                        </p>
+                        <ul>
+                            <li className="mb-2">Fixed a broken site entry (Instagram) using URL pattern probing and validation techniques
+                                <a
+                                    href="https://github.com/sherlock-project/sherlock/issues/2396"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-info"
+                                >
+                                    ( Issue #2396 )
+                                </a>
+                            </li>
+
+
+                            <li>Removed website that shut down (Ask.fm) to maintain the accuracy and performance of the tool</li>
+
+                        </ul>
+                    </div>
                     <hr className="text-secondary" />
+
+                    <div>
+                        <p>
+                            <a
+                                href="https://github.com/sherlock-project/sherlock/pull/2316"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-success"
+                            >
+                                ( PR #2316)
+                            </a>
+
+                        </p>
+
+                        <ul>
+                            <li>Added support for a new platform (AtCoder) recently requested via GitHub Issues.
+                                <a
+                                    href="https://github.com/sherlock-project/sherlock/issues/2314"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-info"
+                                >
+                                    ( Issue #2314 )
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <hr className="text-secondary" />
+
+                    <div>
+                        <p>
+                            <a
+                                href="https://github.com/sherlock-project/sherlock/pull/2265"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-success"
+                            >
+                                ( PR #2265)
+                            </a>
+
+                        </p>
+
+                        <ul>
+                            <li>Removed website that shut down (ICQ.com) to maintain the accuracy and performance of the tool
+                                <a
+                                    href="https://github.com/sherlock-project/sherlock/issues/2264"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-info"
+                                >
+                                    ( Issue #2264 )
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <hr/>
 
                     <p>
                         <strong>Sherlock</strong> is a widely adopted open-source tool designed to detect the presence
