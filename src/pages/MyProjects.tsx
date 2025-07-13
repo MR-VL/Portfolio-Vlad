@@ -1,5 +1,6 @@
 import React from 'react';
 import consolidev from "../assets/consoliDev logo no text.png";
+import manCoding from "../assets/man-1839500_1280.jpg";
 
 const MyProjects: React.FC = () => {
     return (
@@ -45,7 +46,7 @@ const MyProjects: React.FC = () => {
                 </div>
                 <div className="col-md-4 text-end">
                     <img
-                        // src={consolidevImg}
+                        src={manCoding}
                         alt="Consolidev Project"
                         className="rounded me-5"
                         style={{ width: '500px', height: 'auto' }}
