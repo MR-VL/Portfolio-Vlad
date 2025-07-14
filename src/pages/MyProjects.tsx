@@ -55,6 +55,48 @@ const MyProjects: React.FC = () => {
             </div>
 
 
+            <div className="row align-items-center border-bottom border-secondary pb-4 mb-5">
+                <div className="col-md-9 narrow-text p-4 rounded">
+                    <h5 className="text-warning fw-bold mb-1">May 2024 – August 2024</h5>
+                    <h3 className="text-info mb-3">Puzzlez</h3>
+                    <h4 className="text-info">A decentralized puzzle library service</h4>
+                    <p className="mb-1"><strong>Stack:</strong> Java, Spring Boot, PostgreSQL, Angular, Docker, Typescript</p>
+                    <p className="mb-1"><strong>Description:</strong></p>
+                    <ul className="mb-1">
+                        <li className="mb-1">Developed a community-driven platform for puzzle lovers to share jigsaw puzzles, keep track of their collections, and connect through feedback.</li>
+                        <li className="mb-1">Set up secure user login and registration with JWT-based authentication, backed by Spring Security 6.</li>
+                        <li className="mb-1">Built an intuitive file upload system allowing users to share puzzle images and details with ease.</li>
+                        <li className="mb-1">Used MailDev to simulate and preview account confirmation and notification emails during development.</li>
+                        <li className="mb-1">Designed a borrowing system that checks puzzle availability and keeps track of ongoing lends and returns.</li>
+                        <li className="mb-1">Added return approval and archiving features to support a trusted puzzle-sharing workflow.</li>
+                        <li className="mb-1">Created a smooth, responsive UI using Angular, complete with lazy-loaded routes and route guards for protected pages.</li>
+                        <li className="mb-1">Connected frontend to backend using OpenAPI-generated Angular services to reduce boilerplate and sync types.</li>
+                        <li className="mb-1">Followed REST best practices with validation, custom error responses, and paginated endpoints for scalability.</li>
+                        <li className="mb-1">Containerized the entire app with Docker for easy setup, development, and deployment across environments.</li>
+                        <li className="mb-1">Generated interactive API documentation using Swagger UI for quick testing and team collaboration.</li>
+                        <li className="mb-1">Implemented environment-specific configurations using Spring Profiles to separate dev and production behavior.</li>
+                        <li className="mb-1">Encouraged community engagement through a feedback system on completed puzzles, with special recognition for original uploaders.</li>
+                    </ul>
+
+
+                    <p className="mb-1">
+                        <strong>Links: </strong>
+                        <a href="https://github.com/MR-VL/Puzzlez" target="_blank" rel="noopener noreferrer" className="text-info">GitHub</a>{' | '}
+                        <a href="https://mr-vl.github.io/Puzzlez-Info/" target="_blank" rel="noopener noreferrer" className="text-info">Companion site with more details</a>
+                    </p>
+
+                </div>
+                <div className="col-md-4 text-end">
+                    <img
+                        // src={puzzlezImg}
+                        alt="Puzzlez Project"
+                        className="rounded me-5"
+                        style={{ width: '500px', height: 'auto' }}
+                    />
+                </div>
+            </div>
+
+
         </div>
     );
 
