@@ -4,15 +4,35 @@ import manCoding from "../assets/man-1839500_1280.jpg";
 import puzzlePic from "../assets/puzzlePic.png"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPuzzlePiece} from "@fortawesome/free-solid-svg-icons/faPuzzlePiece";
+import {Link} from "react-router-dom";
 const MyProjects: React.FC = () => {
     return (
         <div className="container mt-5 text-white">
             <h1 className="mb-4 border-bottom pb-2">My Projects</h1>
 
+            {/* current projects */}
+            <div className="row align-items-center border-bottom border-secondary pb-4 mb-5">
+                <div className="col-md-9 narrow-text p-4 rounded">
+                    <h5 className="text-warning fw-bold mb-3">Present - Future</h5>
+
+                    <p className="mb-1">
+                        <strong>
+                            <Link to="/Portfolio-Vlad/CurrentProjects" className="text-info text-decoration-underline">
+                                Click to see projects that I am currently working on!
+                            </Link>
+                        </strong>
+                    </p>
+
+                    <p className="mb-1">
+                        <strong>Also check out my  <a href="https://github.com/MR-VL/Puzzlez" target="_blank" rel="noopener noreferrer" className="text-info">GitHub</a> for more up to date information.</strong>
+                    </p>
+                </div>
+            </div>
+
             {/* Consolidev */}
             <div className="row align-items-center border-bottom border-secondary pb-4 mb-5">
                 <div className="col-md-9 narrow-text p-4 rounded">
-                    <h5 className="text-warning fw-bold mb-1">August 2024 – Present</h5>
+                    <h5 className="text-warning fw-bold mb-1">August 2024 – December 2024</h5>
                     <div className="d-flex align-items-center mb-3">
                         <img
                             src={consolidev}
