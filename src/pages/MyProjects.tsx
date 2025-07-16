@@ -1,7 +1,9 @@
 import React from 'react';
 import consolidev from "../assets/consoliDev logo no text.png";
 import manCoding from "../assets/man-1839500_1280.jpg";
-
+import puzzlePic from "../assets/puzzlePic.png"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPuzzlePiece} from "@fortawesome/free-solid-svg-icons/faPuzzlePiece";
 const MyProjects: React.FC = () => {
     return (
         <div className="container mt-5 text-white">
@@ -57,8 +59,17 @@ const MyProjects: React.FC = () => {
 
             <div className="row align-items-center border-bottom border-secondary pb-4 mb-5">
                 <div className="col-md-9 narrow-text p-4 rounded">
-                    <h5 className="text-warning fw-bold mb-1">May 2024 – August 2024</h5>
-                    <h3 className="text-info mb-3">Puzzlez</h3>
+                    <h5 className="text-warning fw-bold mb-3">May 2024 – August 2024</h5>
+
+                    <div className="d-flex align-items-center gap-4 mb-3">
+                        <h1 className="mb-0">
+                            <FontAwesomeIcon color="#cc8400" icon={faPuzzlePiece} />
+                        </h1>
+                        <h3 className="text-info mb-0">Puzzlez</h3>
+                    </div>
+
+
+
                     <h4 className="text-info">A decentralized puzzle library service</h4>
                     <p className="mb-1"><strong>Stack:</strong> Java, Spring Boot, PostgreSQL, Angular, Docker, Typescript</p>
                     <p className="mb-1"><strong>Description:</strong></p>
@@ -88,7 +99,7 @@ const MyProjects: React.FC = () => {
                 </div>
                 <div className="col-md-4 text-end">
                     <img
-                        // src={puzzlezImg}
+                        src={puzzlePic}
                         alt="Puzzlez Project"
                         className="rounded me-5"
                         style={{ width: '500px', height: 'auto' }}
