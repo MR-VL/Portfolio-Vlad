@@ -7,6 +7,64 @@ const OpenSource: React.FC = () => {
         <div className="container mt-5 text-white">
             <h1 className="mb-4 border-bottom pb-2">Open Source Contributions</h1>
 
+            {/* Maigret Project */}
+            <div className="row align-items-start pb-4">
+                <div className="col-md-8 narrow-text p-4 rounded">
+                    <div className="d-flex align-items-center mb-3">
+                        <h3 className="text-info mb-0">Maigret</h3>
+                    </div>
+
+                    <h5 className="text-warning fw-bold mb-1">Jul. 2025 - Present</h5>
+                    <p><strong>GitHub Stars:</strong> ⭐15.7k+⭐</p>
+                    <p><strong>Role:</strong> Individual Contributor</p>
+                    <p>
+                        <strong>GitHub Repository:</strong>{' '}
+                        <a
+                            href="https://github.com/soxoj/maigret"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-info"
+                        >
+                            soxoj/maigret
+                        </a>
+                    </p>
+
+                    <div className="mt-4">
+                        <h5 className="text-warning fw-bold">✅ Merged Commits</h5>
+                        <p>
+                            <a
+                                href="https://github.com/soxoj/maigret/pull/2037"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-success"
+                            >
+                                ( PR #2037)
+                            </a>
+
+                        </p>
+                        <ul>
+                            <li className="mb-2">Disabled a deprecated site (Ask.FM) to maintain the accuracy and performance of the tool
+                                <a
+                                    href="https://github.com/soxoj/maigret/issues/2036"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-info"
+                                >
+                                    ( Issue #2036 )
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr className="text-secondary" />
+                    <p>
+                        <strong>About Maigret:</strong> Maigret is an advanced username reconnaissance tool used for
+                        finding a person’s footprint across many online platforms. It’s highly regarded for its speed,
+                        extensibility, and support for various output formats including JSON and PDF.
+                    </p>
+                </div>
+            </div>
+
+            {/* Sherlock Project */}
             <div className="row align-items-start pb-4 mb-2">
                 {/* LEFT COLUMN — TEXTUAL CONTENT */}
                 <div className="col-md-8 narrow-text p-4 rounded">
@@ -24,7 +82,7 @@ const OpenSource: React.FC = () => {
 
 
 
-                    <h5 className="text-warning fw-bold mb-1">Aug. 2025 - Present</h5>
+                    <h5 className="text-warning fw-bold mb-1">Aug. 2024 - Present</h5>
 
                     <p><strong>GitHub Stars:</strong> ⭐66.4k+⭐</p>
                     <p><strong>Role:</strong> Individual Contributor</p>
